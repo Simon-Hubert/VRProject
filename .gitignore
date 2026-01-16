@@ -48,7 +48,20 @@ SourceArt/**/*.tga
 
 # Binary Files
 Binaries/*
+!Binaries/Win64
+Binaries/Win64/*
+!Binaries/Win64/*.dll
+!Binaries/Win64/*.module
+!Binaries/Win64/*.modules
+!Binaries/Win64/*.target
+
 Plugins/**/Binaries/*
+!Plugins/**/Binaries/Win64
+Plugins/**/Binaries/Win64/*
+!Plugins/**/Binaries/Win64/*.dll
+!Plugins/**/Binaries/Win64/*.module
+!Plugins/**/Binaries/Win64/*.modules
+!Plugins/**/Binaries/Win64/*.target
 
 # Builds
 Build/*
@@ -73,3 +86,6 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Rider
+.idea
