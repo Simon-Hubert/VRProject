@@ -19,5 +19,8 @@ public:
 	void InitGravityWorldSubsystem();
 
 	UFUNCTION(BlueprintCallable, Category = "GravityWorldSubsystem")
+	float GetGlobalGravityZ() const;
+	
+	UFUNCTION(BlueprintCallable, Category = "GravityWorldSubsystem")
 	void SetGlobalGravityZ(float gravity);	
 };
